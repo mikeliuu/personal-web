@@ -1,0 +1,33 @@
+/* Just for the Look  */
+body {
+	background: #ffffff;
+	color: #000000;
+	font-family: "Roboto", sans-serif;
+	font-size: 60px;
+}
+/* Wrapper to Center the Typewriter */
+.type-wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.centeredBox {
+	width: 100%;
+	text-align: center;
+}
+
+/* The Typewriter */
+
+.cursor {
+	border-left: 5px solid #000000;
+	animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}

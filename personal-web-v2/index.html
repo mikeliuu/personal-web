@@ -1,0 +1,259 @@
+<!-- html/ individual project - personal website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mike Liu | Front-End Developer</title>
+    <!-- page icon -->
+    <link rel="icon" href="./assets/img/logo/icon-logo.png">
+    <!-- page details -->
+    <meta name="author" content="Mike Liu">
+    <meta name="keywords" content="Mike Liu, Mike Liu website, mikeliu, portfolio website, web design, ui design, coding, programming, font end developer, font end, software engineer, hong kong">
+    <meta name="description" content="Mike Liu. The story of a digital marketer becomes a front-end web developer.">  
+    <!-- google font/ "Roboto" -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- scroll reveal js-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- local file/ main.css -->
+    <link rel="stylesheet" type="text/css" href="./assets/style/main.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar-box" data-offset="50">
+
+    <!-- navbar -->
+    <nav class="navbar-box fixed-top nav-padding overlay" id="nav-box">
+
+        <div class="width-wrap-box">
+            <div class="width-wrapper-left">
+                <!-- nav menu icon/ toggle -->
+                <span class="nav-toggle" id="js-nav-toggle" data-toggle="collapse" data-target="js-menu">
+                    <img src="./assets/img/menu.png" alt="menu bar">
+                </span>
+
+                <!-- nav logo -->
+                <a href="#" class="nav-logo"><img src="./assets/img/logo/logo18_l3a-1.png" alt="logo"></a>
+            </div>
+                
+                <!-- nav links -->
+                <div class="width-wrapper-right">
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- header/ hero section -->
+    <header class="hero col-w12">
+        <div class="hero-content">
+            <div class="hero-text">
+                <!-- typewriter section, span is for other colors -->
+                <div class="typewriter-wrapper">
+                    <div class="inside">
+
+                        <!-- typewriter text -->
+                        <!-- <span>Hi, It's Mike.<br>I'm a Front-End Developer.</span> -->
+
+                        <span>// life motto<br>if (think() >= 2) {<br>&nbsp think().push();<br>&nbsp act();<br>};</span>
+
+                        <div class='symbol'>|</div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </header>
+
+    <!-- about section -->
+    <section class="about col-w12" id="about">
+        <h1 class="sec-h">About</h1>
+
+        <div class="my-info col-w12">
+            <div class="info-image col-w5">
+                <img src="./assets/img/pro-pic.jpg" alt="profile pic">
+            </div>
+
+            <div class="info-text col-w7">
+                <p>Before joining the bootcamp, I studied in Advertising. After that worked at digital media agencies for 2 years. I've met great teammates in young workplaces & learnt tons of media knowledge during the days.</p>
+                <br>
+                <p>But, I've made a challenging decision for my career to become a software engineer. But, I've made a challenging decision for my career to become a software engineer.</p>
+            </div>
+        </div>
+    </section>
+     
+
+    <!-- about/ skills -->
+    <section class="skills">
+        <div class="wrap-skills col-w12">
+        <div class="skills-area col-w6">
+            <div class="skills-box col-w3 ">
+                <h4>HTML 5</h4>
+                <i class="fab fa-4x fa-html5" id="html"></i>
+            </div>
+            
+            <div class="skills-box col-w3">
+                <h4>CSS 3</h4>
+                <i class="fab fa-4x fa-css3" id="css"></i>
+            </div>
+        </div>
+
+        <div class="skills-area col-w6">
+            <div class="skills-box col-w3">
+                <h4>Javascript</h4>
+                <i class="fab fa-4x fa-js" id="js"></i>
+            </div>
+
+            <div class="skills-box col-w3">
+                <h4>Node JS</h4>
+                <i class="fab fa-4x fa-node" id="nodejs"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- portfolio section -->
+    <section class="portfolio col-w12" id="portfolio">
+        <h1 class="sec-h">Portfolio</h1>
+
+        <div class="btn-container" id="btnContainer">
+            <!-- onclick refers to filter-div class below-->
+            <div class="filter-btn active" onclick="filterSelection('all')"> All</div>
+
+            <span class="break">/</span>
+
+            <div class="filter-btn" onclick="filterSelection('web')">Web</div>
+
+            <!-- <span class="break">/</span> -->
+
+            <!-- <div class="filter-btn" onclick="filterSelection('app')">App</div> -->
+
+            <span class="break">/</span>
+
+            <div class="filter-btn" onclick="filterSelection('ui')">UI Design</div>
+        </div>
+
+        <div class="pofo-wrapper">
+            <div class="pofo-center">
+
+                <div class="col-w3 filter-div web">
+                    <div class="pofo-width">
+                        <img class="pofo-img" src="./assets/img/works/web-1.png" alt="web-1-prep-work">
+                        <div class="img-overlay overlay-transit">
+                            <h3>Prep-work</h3></a>
+                            <div class="hr"></div>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-w3 filter-div web">
+                    <div class="pofo-width">
+                        <img class="pofo-img" src="./assets/img/works/app-1b.png" alt="app-1b-cuffs">
+                        <div class="img-overlay overlay-transit">
+                            <h3>Cuffs Web App</h3></a>
+                            <div class="hr"></div>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-w3 filter-div ui">
+                        <div class="pofo-width">
+                        <img class="pofo-img" src="./assets/img/works/ui-design-3.png" alt="ui-3-app-tailor-y">
+                        <div class="img-overlay overlay-transit">
+                            <h3>Tailor Y App</h3>
+                            <div class="hr"></div>
+                            <p>UI Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-w3 filter-div ui">
+                    <div class="pofo-width">
+                        <img class="pofo-img" src="./assets/img/works/ui-design-2.png" alt="ui-2-app-snapon">
+                        <div class="img-overlay overlay-transit">
+                            <h3>Snapon App</h3>
+                            <div class="hr"></div>
+                            <p>UI Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-w3 filter-div web">
+                    <div class="pofo-width">
+                        <img class="pofo-img" src="./assets/img/works/web-2.png" alt="web-2-web-hang-heung">
+                        <div class="img-overlay overlay-transit">
+                            <h3>Hang Heung Web</h3>
+                            <div class="hr"></div>
+                            <p>UI Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-w3 filter-div ui">
+                    <div class="pofo-width">
+                        <img class="pofo-img" src="./assets/img/works/ui-design-1.png" alt="ui-1-app-bonaqua">
+                        <div class="img-overlay overlay-transit">
+                            <h3>Bonaqua App</h3>
+                            <div class="hr"></div>
+                            <p>UI Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h1 class="sec-h">Contact</h1>
+        <div class="contact-content">
+            <p>It's glad to you in the tiny world, I am pleased to listen both stories & experiences of us with each other to discover more interesting thins & opportunities. Feel free to reach out!</p>
+
+            <div class="contact-icon">
+                <a href="https://github.com/mikeliuu" target="_blank"><i class="fab fa-2x fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mikeliuhk" target="_blank"><i class="fab fa-2x fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-box col-w12">
+            <div class="footer-txt">
+                <!-- empty <p> for line-height -->
+                <p>&copy;2019 <a class="footer-a" href="#">Mike Liu</a></p>
+                <p>HTML 5 | CSS 3 | Javascript | UI Design</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="./assets/js/smooth-scroll.min.js"></script>
+    <script src="./assets/js/mob-menu.js"></script>
+    <script src="./assets/js/slide-down-navbar.js"></script>
+    <script src="./assets/js/typewriter.js"></script>
+    <script src="./assets/js/portfolio-filter.js"></script>
+    <script src="./assets/js/scroll-reveal.js"></script>
+</body>
+</html>
